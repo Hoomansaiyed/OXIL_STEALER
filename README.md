@@ -159,13 +159,6 @@ reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "Realtek HD A
 
 You can do it by running this [.bat script](https://github.com/TairikuOokami/Windows/blob/main/Microsoft%20Defender%20Enable.bat) (I'm not the developer behind it, make sure the file does not contain malware)
 
-## Contributing
-Contributions to this project are welcome! Feel free to open issues, submit pull requests, or suggest improvements. Make sure to follow the [Contributing Guidelines](https://github.com/benzoXdev/oxil/blob/main/CONTRIBUTING.md)
-
-You can also support this project development by leaving a star ⭐ or by donating me. Every little tip helps!
-
-<a href='https://ko-fi.com/benzoXdev'><img src='.github/assets/kofi.png' width=150></a>
-
 ## License
 This library is released under the MIT License. See LICENSE file for more informations.
 
