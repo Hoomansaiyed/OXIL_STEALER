@@ -98,41 +98,6 @@ git clone https://github.com/benzoXdev/oxil
 cd oxil
 ```
 
-## Usage
-
-You can use the Project template:
-
-- Open `main.go` and edit config with your Discord webhook and your crypto addresses
-
-- Build the template: (reduce binary size by using `-s -w`)
-
-```bash
-go build -ldflags "-s -w"
-```
-
-- You can hide the console without `hideconsole` module (you must remove `program.IsAlreadyRunning()` check from `main.go` before) by running
-
-```bash
-go build -ldflags "-s -w -H=windowsgui"
-```
-
-- You can also optionally pack the output executable with UPX which will reduce the binary size from ~10MB to ~3MB. To do this, install [UPX](https://github.com/upx/upx/releases/) and run
-
-```bash
-upx.exe --ultra-brute oxil.exe
-```
-
-- You can also use oxil in your own Go code. Just import the desired module like this:
-```go
-package main
-
-import "github.com/benzoXdev/oxil/modules/hideconsole"
-
-func main() {
-  hideconsole.Run()
-}
-```
-
 ## Remove
 
 This guide will help you removing oxil from your system
